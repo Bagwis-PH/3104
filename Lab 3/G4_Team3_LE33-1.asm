@@ -1,0 +1,23 @@
+;33-1
+
+ORG 100H
+JMP HERE
+BUFFER DB 10,?, 10 DUP(' ')    
+
+HERE:
+    MOV DX, OFFSET BUFFER
+    MOV AH, 0AH
+    INT 21H
+    CALL PRINT
+    MOV AH, 04CH
+    INT 021H
+    INT 020H  
+    
+PRINT:
+    XOR BX, BX
+    MOV BL, BUFFER[1]
+    MOV BUFFER[BX+2], '$'
+    MOV DX, OFFSET BUFFER + 2
+    MOV AH, 9H
+    INT 21H
+RET
