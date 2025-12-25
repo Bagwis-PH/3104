@@ -1,0 +1,2 @@
+# 3104 - MICROPROCESSORS
+This repository contains lab activities and essential resources for the Microprocessors (3104) course. It covers the fundamentals of CPU architecture, including the Fetch-Decode-Execute cycle and memory organization. The contents focus on practical hardware interfacing and Assembly language programming, documenting various experiments in low-level control, register management, and peripheral communication.
